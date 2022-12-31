@@ -1,3 +1,3 @@
 #!/bin/bash
-brew install pyenv
-sudo apt-get install build-essential zlib1g-dev libffi-dev libssl-dev libbz2-dev libreadline-dev libsqlite3-dev liblzma-dev
+brew install pyenv gcc
+echo "alias pyenv='CC=\"$(brew --prefix gcc)/bin/gcc-12\" pyenv'" >> ~/.bash_aliases
