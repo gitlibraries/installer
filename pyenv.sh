@@ -1,4 +1,5 @@
 #!/bin/bash
+source ~/.bashrc
 brew install pyenv pyenv-virtualenv gcc
 echo "alias pyenv='CC=\"$(brew --prefix gcc)/bin/gcc-12\" pyenv'" >> ~/.bash_aliases
 echo "export PYENV_ROOT=\"\$HOME/.pyenv\"" >> ~/.bashrc
