@@ -1,2 +1,2 @@
 #!/bin/bash
-brew tap aws/tap && brew install awscli aws-sam-cli
+source ~/.bashrc && brew tap aws/tap && brew install awscli aws-sam-cli
