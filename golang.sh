@@ -66,7 +66,7 @@ setup_env(){
     if [[ $sudo == "" && -z `echo $GOPATH` ]];then
         while :
         do
-            #read -p "默认GOPATH路径: `color_echo $blue /home/go`, 回车直接使用或者输入自定义绝对路径: " GOPATH
+            read -p "默认GOPATH路径: `color_echo $blue /home/go`, 回车直接使用或者输入自定义绝对路径: " GOPATH
             if [[ $GOPATH ]];then
                 if [[ ${GOPATH:0:1} != "/" ]];then
                     color_echo $yellow "请输入绝对路径!"
